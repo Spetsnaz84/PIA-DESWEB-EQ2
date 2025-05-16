@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanghái - Ciudades Cyberpunk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body class="city2-shanghai">
+
+    <header class="header">
+        <h1 class="title">Shanghái - La Metrópolis del Futuro</h1>
+        <p class="subtitle">Un skyline infinito, tecnología y velocidad urbana.</p>
+    </header>
+
+    <main class="main-content">
+
+        <section class="city-banner">
+            <img class="imagenwaza" src="imagenesCiudades/shangai3.jpg" alt="Vista nocturna de Shanghái">
+        </section>
+
+        <section class="city-description">
+            <h2 class="section-title">El Corazón de la Innovación</h2>
+            <p>Shanghái es una ciudad donde la tecnología y la arquitectura futurista crean una atmósfera única. Con luces de neón reflejándose en el río Huangpu, sus calles están repletas de avances tecnológicos y vida urbana acelerada.</p>
+            <p>Desde el distrito de Pudong hasta los mercados tech de Xujiahui, Shanghái es la capital asiática del progreso.</p>
+        </section>
+
+        <section class="city-map">
+            <h2 class="section-title">📍 Ubicación y Mapa</h2>
+            <p>Shanghái, una ciudad que redefine el futuro con su tecnología y arquitectura.</p>
+            <ul>
+                <li>⚡ <strong>Pudong</strong> - Distrito financiero y tecnológico.</li>
+                <li>🌆 <strong>The Bund</strong> - Zona con rascacielos iluminados.</li>
+                <li>💠 <strong>Xujiahui</strong> - Centro de innovación y comercio tecnológico.</li>
+            </ul>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <p>Mapa interactivo de Shanghái</p>
+        </section>
+
+        <div id="image-container" style="display: none; text-align: center;">
+            <h2 id="image-title"></h2>
+            <img id="city-image" src="" alt="" style="width: 80%; max-width: 700px;">
+        </div>
+
+        <section class="city-tech">
+            <h2 class="section-title">🚄 Velocidad y Movilidad Futurista</h2>
+            <p>Shanghái es la ciudad de la velocidad, conectando millones de personas con sistemas avanzados:</p>
+            <ul>
+                <li>🚄 <strong>Tren Maglev</strong> - El más rápido del mundo, alcanzando <strong>431 km/h</strong>.</li>
+                <li>🚆 <strong>Metro automatizado</strong> - Una de las redes urbanas más extensas y eficientes.</li>
+                <li>🚖 <strong>Taxis eléctricos</strong> - Reduciendo la contaminación con tecnología sostenible.</li>
+            </ul>
+        </section>
+
+        <section class="city-architecture">
+            <h2 class="section-title">🏙️ Arquitectura Monumental</h2>
+            <p>El skyline de Shanghái redefine lo que significa una ciudad del futuro:</p>
+            <ul>
+                <li>🌆 <strong>Torre de Shanghái</strong> - <strong>632 metros</strong>, el segundo edificio más alto del mundo.</li>
+                <li>💠 <strong>Centro Financiero</strong> - Con su diseño futurista y luces interactivas.</li>
+                <li>🏗️ <strong>Puente Lupu</strong> - Una obra maestra de la ingeniería moderna.</li>
+            </ul>
+        </section>
+
+        <section class="city-global">
+            <h2 class="section-title">🌏 Shanghái, el Núcleo Global</h2>
+            <p>Como una de las ciudades más conectadas del mundo, Shanghái lidera la economía asiática:</p>
+            <ul>
+                <li>🚢 <strong>Puerto de Shanghái</strong> - El más activo del mundo en comercio internacional.</li>
+                <li>🛍️ <strong>Mercados de tecnología</strong> - Especializados en innovación y electrónica de última generación.</li>
+                <li>🌐 <strong>Conectividad global</strong> - Una de las ciudades con la mayor infraestructura digital.</li>
+            </ul>
+        </section>
+
+        <section class="city-gallery">
+            <h2 class="section-title">📷 Galería</h2>
+            <div class="gallery">
+                <img src="imagenesCiudades/shanghai-night.webp" alt="Vista nocturna de Shanghái">
+                <p>Vista nocturna de Shanghái</p>
+                <img src="imagenesCiudades/shanghai-bund.jpg" alt="The Bund iluminado">
+                <p>The Bund iluminado</p>
+                <img src="imagenesCiudades/shanghai-tech.jpg" alt="Distrito tecnológico de Shanghái">
+                <p>Distrito tecnológico de Shanghái</p>
+                <img src="imagenesCiudades/shanghai-street.jpg" alt="Calles futuristas de Shanghái">
+                <p>Calles futuristas de Shanghái</p>
+                <img src="imagenesCiudades/shanghai-neon.jpg" alt="Luces neón en Shanghái">
+                <p>Luces neón en Shanghái</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2025 Explorador Cyberpunk | Desarrollado por el Equipo 2</p>
+        <a href="index.html" class="back-link">⬅️ Volver al inicio</a>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="javascript.js" async defer></script>
+
+</body>
+</html>

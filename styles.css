@@ -1,0 +1,573 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-color: #000;
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(90deg, #000, #003344);
+}
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff;
+}
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.cities-section {
+    text-align: center;
+    margin: 50px 0;
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00ffff;
+}
+.cities-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.city {
+    background-color: rgba(0, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+.city:hover {
+    background-color: rgba(0, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+.city-link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #00ffff;
+}
+
+.city-link {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00ffff;
+    transition: 0.3s ease;
+}
+
+.city:hover .city-link {
+    animation: glitch 1.2s infinite steps(5, jump-none);
+}
+
+@keyframes glitch {
+    0% { transform: translate(0, 0) skew(0deg); filter: blur(0px) contrast(100%); }
+    20% { transform: translate(-3px, 3px) skew(5deg); filter: blur(1px) contrast(120%); }
+    40% { transform: translate(3px, -3px) skew(-5deg); filter: blur(2px) contrast(130%); }
+    60% { transform: translate(-3px, -3px) skew(3deg); filter: blur(3px) contrast(140%); }
+    80% { transform: translate(3px, 3px) skew(-3deg); filter: blur(1px) contrast(110%); }
+    100% { transform: translate(0, 0) skew(0deg); filter: blur(0px) contrast(100%); }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #003344, #000);
+}
+.footer-text {
+    font-weight: 400;
+    color: #aaa;
+}
+
+.imagenwaza {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffff;
+    margin-top: 10px;
+}
+
+.cyberpunk-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cyberpunk-info img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/*DISEÑO DE TOKIO*/
+
+.city1-tokyo {
+    background-color: #0a0a0a;
+    color: #ff0033; 
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.city1-tokyo .header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #ff0033;
+}
+
+.city1-tokyo .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff0033;
+}
+
+.city1-tokyo .subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.city1-tokyo .city-banner img {
+    width: 75%;
+    max-width: 850px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #ff0033;
+    box-shadow: 0px 0px 15px #ff0033;
+}
+
+.city1-tokyo .gallery img {
+    width: 30%;
+    max-width: 400px;
+    margin: 10px;
+    border: 3px solid #ff0033;
+    box-shadow: 0px 0px 10px #ff0033;
+}
+
+.city1-tokyo #map {
+    width: 80%;
+    height: 350px;
+    border: 3px solid #ff0033;
+    box-shadow: 0px 0px 10px #ff0033;
+    margin: 20px auto;
+}
+
+.city1-tokyo .section-title {
+    font-size: 2rem;
+    color: #ff0033;
+    margin-bottom: 10px;
+}
+
+.city1-tokyo .city-description p,
+.city1-tokyo .city-facts ul,
+.city1-tokyo .city-tech ul,
+.city1-tokyo .city-culture ul {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.city1-tokyo .footer {
+    background-color: #111;
+    padding: 20px;
+    border-top: 4px solid #ff0033;
+}
+
+.city1-tokyo .footer-text {
+    color: #fff;
+}
+
+.city1-tokyo .back-link {
+    font-size: 1.2rem;
+    color: #ff0033;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.city1-tokyo ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.city1-tokyo ul li {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+/*DISEÑO DE SHANGAI*/
+
+.city2-shanghai {
+    background-color: #0a0a0a;
+    color: #00ff66;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.city2-shanghai .header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #00ff66;
+}
+
+.city2-shanghai .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ff66;
+}
+
+.city2-shanghai .subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.city2-shanghai .city-banner img,
+.city2-shanghai .gallery img {
+    width: 75%;
+    max-width: 850px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #00ff66;
+    box-shadow: 0px 0px 15px #00ff66;
+}
+
+.city2-shanghai #map {
+    width: 80%; 
+    height: 350px;
+    border: 3px solid #00ff66;
+    box-shadow: 0px 0px 10px #00ff66;
+    margin: 20px auto;
+}
+
+.city2-shanghai ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.city2-shanghai ul li {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+.city2-shanghai .footer {
+    background-color: #111;
+    padding: 20px;
+    border-top: 4px solid #00ff66;
+}
+
+.city2-shanghai .footer-text {
+    color: #fff;
+}
+
+.city2-shanghai .back-link {
+    font-size: 1.2rem;
+    color: #00ff66;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*DISEÑO DE SEUL*/
+.city3-seoul {
+    background-color: #0a0a0a;
+    color: #a633ff; 
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.city3-seoul .header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #a633ff;
+}
+
+.city3-seoul .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a633ff;
+}
+
+.city3-seoul .subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.city3-seoul .city-banner img,
+.city3-seoul .gallery img {
+    width: 75%;
+    max-width: 850px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #a633ff;
+    box-shadow: 0px 0px 15px #a633ff;
+}
+
+.city3-seoul #map {
+    width: 80%;
+    height: 350px;
+    border: 3px solid #a633ff;
+    box-shadow: 0px 0px 10px #a633ff;
+    margin: 20px auto;
+}
+
+.city3-seoul ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.city3-seoul ul li {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+.city3-seoul .footer {
+    background-color: #111;
+    padding: 20px;
+    border-top: 4px solid #a633ff;
+}
+
+.city3-seoul .footer-text {
+    color: #fff;
+}
+
+.city3-seoul .back-link {
+    font-size: 1.2rem;
+    color: #a633ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*DISEÑO DE HONG KONG*/
+
+.city4-hongkong {
+    background-color: #0a0a0a;
+    color: #ffcc00;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.city4-hongkong .header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #ffcc00;
+}
+
+.city4-hongkong .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+.city4-hongkong .subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.city4-hongkong .city-banner img,
+.city4-hongkong .gallery img {
+    width: 75%;
+    max-width: 850px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #ffcc00;
+    box-shadow: 0px 0px 15px #ffcc00;
+}
+
+.city4-hongkong #map {
+    width: 80%;
+    height: 350px;
+    border: 3px solid #ffcc00;
+    box-shadow: 0px 0px 10px #ffcc00;
+    margin: 20px auto;
+}
+
+.city4-hongkong ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.city4-hongkong ul li {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+.city4-hongkong .footer {
+    background-color: #111;
+    padding: 20px;
+    border-top: 4px solid #ffcc00;
+}
+
+.city4-hongkong .footer-text {
+    color: #fff;
+}
+
+.city4-hongkong .back-link {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*DISEÑO DE TAIPEI*/
+
+.city5-taipei {
+    background-color: #0a0a0a;
+    color: #00e0ff; 
+    font-family: 'Orbitron', sans-serif; 
+    text-align: center;
+}
+
+.city5-taipei .header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #00e0ff;
+}
+
+.city5-taipei .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00e0ff;
+}
+
+.city5-taipei .subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.city5-taipei .city-banner img,
+.city5-taipei .gallery img {
+    width: 75%;
+    max-width: 850px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #00e0ff;
+    box-shadow: 0px 0px 15px #00e0ff;
+}
+
+.city5-taipei #map {
+    width: 80%; 
+    height: 350px; 
+    border: 3px solid #00e0ff;
+    box-shadow: 0px 0px 10px #00e0ff;
+    margin: 20px auto;
+}
+
+.city5-taipei ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.city5-taipei ul li {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+.city5-taipei .footer {
+    background-color: #111;
+    padding: 20px;
+    border-top: 4px solid #00e0ff;
+}
+
+.city5-taipei .footer-text {
+    color: #fff;
+}
+
+.city5-taipei .back-link {
+    font-size: 1.2rem;
+    color: #00e0ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*DISEÑO OSAKA*/
+
+.city6-osaka {
+    background-color: #0a0a0a; 
+    color: #ff6600; 
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.city6-osaka .header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 4px solid #ff6600;
+}
+
+.city6-osaka .title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff6600;
+}
+
+.city6-osaka .subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.city6-osaka .city-banner img,
+.city6-osaka .gallery img {
+    width: 75%;
+    max-width: 850px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #ff6600;
+    box-shadow: 0px 0px 15px #ff6600;
+}
+
+.city6-osaka #map {
+    width: 80%; 
+    height: 350px; 
+    border: 3px solid #ff6600;
+    box-shadow: 0px 0px 10px #ff6600;
+    margin: 20px auto;
+}
+
+.city6-osaka ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.city6-osaka ul li {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+.city6-osaka .footer {
+    background-color: #111;
+    padding: 20px;
+    border-top: 4px solid #ff6600; 
+}
+
+.city6-osaka .footer-text {
+    color: #fff;
+}
+
+.city6-osaka .back-link {
+    font-size: 1.2rem;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
